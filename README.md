@@ -1,5 +1,4 @@
 # Socket Library
- Socket library I made.
 Soket Kütüphanesi Programlama Agota 
 Öncelikle Soket Programlama Nedir?
 
@@ -117,8 +116,8 @@ int main(int argc, char const* argv[])
 	shutdown(server_fd, SHUT_RDWR);
 	return 0;
 }
-
 client.c
+
 // Client side C/C++ program to demonstrate Socket
 // programming
 #include <arpa/inet.h>
@@ -163,7 +162,8 @@ int main(int argc, char const* argv[])
 	valread = read(client_fd, buffer, 1024);
 	printf("%s\n", buffer);
 
-	// closing the connected socket
+	// closing the
+	connected socket
 	close(client_fd);
 	return 0;
 }
